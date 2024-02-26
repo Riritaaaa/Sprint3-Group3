@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-27T00:57:41.017323" rpa="false" schemaversion="5">
+<suite id="s1" name="WrongName" source="C:\Users\coopt\Desktop\TestRobot\WrongName\WrongName.robot">
+<test id="s1-t1" name="TC01 : Open Catalog" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:41.216921" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/'.</msg>
+<arg>http://localhost:8080/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:57:41.216921" elapsed="2.066820"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-27T00:57:43.285279" level="INFO">This is executed.</msg>
+<arg>This is executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-27T00:57:43.285279" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:57:41.215924" elapsed="2.070593"/>
+</test>
+<test id="s1-t2" name="TC02 : Click Product" line="12">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:43.294970" level="INFO">Clicking element '//*[@id="content"]/section/div/div/article/div/div[1]/a'.</msg>
+<arg>//*[@id="content"]/section/div/div/article/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:43.293333" elapsed="0.509970"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:43.804301" level="INFO">Clicking element '//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button'.</msg>
+<arg>//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:43.804301" elapsed="0.060299"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:57:46.865989" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:57:43.865593" elapsed="3.000396"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:46.866518" level="INFO">Clicking element '//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a'.</msg>
+<arg>//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:46.866518" elapsed="0.392709"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:47.262753" level="INFO">Clicking element '//*[@id="main"]/div/div[2]/div/div[2]/div/a'.</msg>
+<arg>//*[@id="main"]/div/div[2]/div/div[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:47.261245" elapsed="0.409277"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:47.680071" level="INFO">Current location is 'http://localhost:8080/order'.</msg>
+<arg>http://localhost:8080/order</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:57:47.670522" elapsed="0.009549"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:57:43.292531" elapsed="4.388562"/>
+</test>
+<test id="s1-t3" name="TC03 : Select Invoice" line="20">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:47.682085" level="INFO">Selecting checkbox '//*[@id="needinvoice"]'.</msg>
+<arg>//*[@id="needinvoice"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:47.682085" elapsed="0.090356"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:47.772441" level="INFO">Clicking button '//*[@id="customer-form"]/footer/button'.</msg>
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:47.772441" elapsed="0.087901"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:57:47.682085" elapsed="0.179255"/>
+</test>
+<test id="s1-t4" name="TC04 : Input Personal Info" line="24">
+<kw name="TC04 : Input Personal Info">
+<msg time="2024-02-27T00:57:47.866347" level="FAIL">No keyword with name 'TC04 : Input Personal Info' found.</msg>
+<status status="FAIL" start="2024-02-27T00:57:47.866347" elapsed="0.000000">No keyword with name 'TC04 : Input Personal Info' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="field-firstname"]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-27T00:57:47.867349" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="field-lastname"]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-27T00:57:47.867349" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="field-email"]</arg>
+<arg>demo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-27T00:57:47.868353" elapsed="0.000000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>//*[@id="customer-form"]/div/div[4]/div[1]/span/label/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-27T00:57:47.868353" elapsed="0.000995"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>//*[@id="customer-form"]/div/div[5]/div[1]/span/label/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-27T00:57:47.869348" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-27T00:57:47.869348" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>WrongName.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-02-27T00:57:47.871415" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-27T00:57:47.862352" elapsed="0.010075">No keyword with name 'TC04 : Input Personal Info' found.</status>
+</test>
+<test id="s1-t5" name="Teardown" line="33">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-27T00:57:47.873425" elapsed="2.229169"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:57:47.873425" elapsed="2.230165"/>
+</test>
+<status status="FAIL" start="2024-02-27T00:57:41.019354" elapsed="9.085232"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" skip="0" id="s1" name="WrongName">WrongName</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

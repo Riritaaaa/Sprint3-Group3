@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-27T00:56:55.625350" rpa="false" schemaversion="5">
+<suite id="s1" name="WrongImg" source="C:\Users\coopt\Desktop\TestRobot\Wronglmg\WrongImg.robot">
+<test id="s1-t1" name="TC01 : Open Catalog" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:56:55.821700" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/'.</msg>
+<arg>http://localhost:8080/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:56:55.821169" elapsed="2.142412"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-27T00:56:57.964208" level="INFO">This is executed.</msg>
+<arg>This is executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-27T00:56:57.964208" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:56:55.820095" elapsed="2.145288"/>
+</test>
+<test id="s1-t2" name="TC02 : Click Product" line="12">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:56:57.968197" level="INFO">Clicking element '//*[@id="content"]/section/div/div/article/div/div[1]/a'.</msg>
+<arg>//*[@id="content"]/section/div/div/article/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:56:57.967659" elapsed="0.494909"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:56:58.463566" level="INFO">Clicking element '//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button'.</msg>
+<arg>//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:56:58.463566" elapsed="0.058650"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:57:01.523498" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:56:58.523207" elapsed="3.000291"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:01.523498" level="INFO">Clicking element '//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a'.</msg>
+<arg>//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:01.523498" elapsed="0.257105"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:01.781598" level="INFO">Clicking element '//*[@id="main"]/div/div[2]/div/div[2]/div/a'.</msg>
+<arg>//*[@id="main"]/div/div[2]/div/div[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:01.781598" elapsed="0.329978"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:02.124143" level="INFO">Current location is 'http://localhost:8080/order'.</msg>
+<arg>http://localhost:8080/order</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:57:02.112556" elapsed="0.011587"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:56:57.967152" elapsed="4.157979"/>
+</test>
+<test id="s1-t3" name="TC03 : Select Invoice" line="20">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:02.126129" level="INFO">Clicking button '//*[@id="customer-form"]/footer/button'.</msg>
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:02.126129" elapsed="0.758774"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:57:04.886107" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:57:02.884903" elapsed="2.001204"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:57:02.126129" elapsed="2.759978"/>
+</test>
+<test id="s1-t4" name="TC04 : Choose Payment" line="24">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:04.887225" level="INFO">Clicking element '//*[@id="payment-option-2"]'.</msg>
+<arg>//*[@id="payment-option-2"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:04.887225" elapsed="0.053217"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:57:06.941740" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:57:04.941429" elapsed="2.000311"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:06.941740" level="INFO">Sending C:\Users\coopt\Desktop\TestRobot\U.png to browser.</msg>
+<arg>xpath=//*[@id="payment-option-2-additional-information"]/form/input</arg>
+<arg>${ImageFilePath}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:06.941740" elapsed="0.026134"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:57:08.969857" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:57:06.969380" elapsed="2.000477"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:57:08.970373" level="INFO">Clicking button '//*[@id="payment-option-2-additional-information"]/form/button'.</msg>
+<arg>//*[@id="payment-option-2-additional-information"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:57:08.970373" elapsed="1.148080"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:57:15.118679" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:57:10.118453" elapsed="5.000226"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:57:04.886107" elapsed="10.232572"/>
+</test>
+<test id="s1-t5" name="Teardown" line="31">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-27T00:57:15.121091" elapsed="2.198375"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:57:15.119694" elapsed="2.199772"/>
+</test>
+<status status="PASS" start="2024-02-27T00:56:55.626352" elapsed="21.695126"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="WrongImg">WrongImg</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

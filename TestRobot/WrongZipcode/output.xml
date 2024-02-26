@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-27T00:58:09.103750" rpa="false" schemaversion="5">
+<suite id="s1" name="WrongZipcode" source="C:\Users\coopt\Desktop\TestRobot\WrongZipcode\WrongZipcode.robot">
+<test id="s1-t1" name="TC01 : Open Catalog" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:09.300741" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/'.</msg>
+<arg>http://localhost:8080/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:58:09.300741" elapsed="1.923375"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-27T00:58:11.229637" level="INFO">This is executed.</msg>
+<arg>This is executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-27T00:58:11.228683" elapsed="0.001468"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:58:09.299368" elapsed="1.932468"/>
+</test>
+<test id="s1-t2" name="TC02 : Click Product" line="12">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:11.234487" level="INFO">Clicking element '//*[@id="content"]/section/div/div/article/div/div[1]/a'.</msg>
+<arg>//*[@id="content"]/section/div/div/article/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:11.233981" elapsed="0.466534"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:11.701515" level="INFO">Clicking element '//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button'.</msg>
+<arg>//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:11.701515" elapsed="0.051865"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:58:14.754717" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:58:11.753380" elapsed="3.001337"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:14.755894" level="INFO">Clicking element '//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a'.</msg>
+<arg>//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:14.754717" elapsed="0.303310"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.059027" level="INFO">Clicking element '//*[@id="main"]/div/div[2]/div/div[2]/div/a'.</msg>
+<arg>//*[@id="main"]/div/div[2]/div/div[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.059027" elapsed="0.335826"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.403381" level="INFO">Current location is 'http://localhost:8080/order'.</msg>
+<arg>http://localhost:8080/order</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.394853" elapsed="0.009542"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:58:11.233103" elapsed="4.172277"/>
+</test>
+<test id="s1-t3" name="TC03 : Select Invoice" line="20">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.406374" level="INFO">Selecting checkbox '//*[@id="needinvoice"]'.</msg>
+<arg>//*[@id="needinvoice"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.406374" elapsed="0.069826"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.477196" level="INFO">Clicking button '//*[@id="customer-form"]/footer/button'.</msg>
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.477196" elapsed="0.064142"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:58:15.405380" elapsed="0.135958"/>
+</test>
+<test id="s1-t4" name="TC04 : Input Personal Info" line="24">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.542338" level="INFO">Typing text 'demo' into text field '//*[@id="field-firstname"]'.</msg>
+<arg>//*[@id="field-firstname"]</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.542338" elapsed="0.116611"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.659956" level="INFO">Typing text 'demo' into text field '//*[@id="field-lastname"]'.</msg>
+<arg>//*[@id="field-lastname"]</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.659956" elapsed="0.081298"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.742266" level="INFO">Typing text 'demo@gmail.com' into text field '//*[@id="field-email"]'.</msg>
+<arg>//*[@id="field-email"]</arg>
+<arg>demo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.742266" elapsed="0.093649"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.835915" level="INFO">Selecting checkbox '//*[@id="customer-form"]/div/div[4]/div[1]/span/label/input'.</msg>
+<arg>//*[@id="customer-form"]/div/div[4]/div[1]/span/label/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.835915" elapsed="0.063126"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.899553" level="INFO">Selecting checkbox '//*[@id="customer-form"]/div/div[5]/div[1]/span/label/input'.</msg>
+<arg>//*[@id="customer-form"]/div/div[5]/div[1]/span/label/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.899553" elapsed="0.063522"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:15.964077" level="INFO">Clicking button '//*[@id="customer-form"]/footer/button'.</msg>
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:15.964077" elapsed="0.632179"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:58:15.541338" elapsed="1.055918"/>
+</test>
+<test id="s1-t5" name="TC05 : Write Address" line="32">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:16.598256" level="INFO">Selecting options from selection list 'id_country' by value 204.</msg>
+<arg>id_country</arg>
+<arg>204</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-02-27T00:58:16.598256" elapsed="0.045666"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:58:17.644226" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:58:16.643922" elapsed="1.000304"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:17.644226" level="INFO">Typing text 'KKU' into text field '//*[@id="field-company"]'.</msg>
+<arg>//*[@id="field-company"]</arg>
+<arg>KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:17.644226" elapsed="0.069263"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:17.714491" level="INFO">Typing text '1430301342142' into text field '//*[@id="field-vat_number"]'.</msg>
+<arg>//*[@id="field-vat_number"]</arg>
+<arg>1430301342142</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:17.713489" elapsed="0.084249"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:17.797738" level="INFO">Typing text '19 moo 1' into text field '//*[@id="field-address1"]'.</msg>
+<arg>//*[@id="field-address1"]</arg>
+<arg>19 moo 1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:17.797738" elapsed="0.074277"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:17.872015" level="INFO">Typing text 'test' into text field 'postcode'.</msg>
+<arg>postcode</arg>
+<arg>test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:17.872015" elapsed="0.068327"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:17.941342" level="INFO">Typing text 'khonkaen' into text field '//*[@id="field-city"]'.</msg>
+<arg>//*[@id="field-city"]</arg>
+<arg>khonkaen</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:17.941342" elapsed="0.075084"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:18.017446" level="INFO">Selecting checkbox '//*[@id="use_same_address"]'.</msg>
+<arg>//*[@id="use_same_address"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:18.017446" elapsed="0.020913"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:18.039360" level="INFO">Typing text '0630525780' into text field '//*[@id="field-phone"]'.</msg>
+<arg>//*[@id="field-phone"]</arg>
+<arg>0630525780</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:18.039360" elapsed="0.077854"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:58:19.117756" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:58:18.117214" elapsed="1.000542"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:19.118265" level="INFO">Clicking element 'confirm-addresses'.</msg>
+<arg>confirm-addresses</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:58:19.118265" elapsed="0.409486"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:58:19.634825" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="WrongZipcode.jpg"&gt;&lt;img src="WrongZipcode.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-27T00:58:19.634825" level="INFO">C:\Users\coopt\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py:822: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  return self.get_screenshot_as_file(filename)</msg>
+<arg>WrongZipcode.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-27T00:58:19.529258" elapsed="0.105567"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:58:16.597256" elapsed="3.037569"/>
+</test>
+<test id="s1-t6" name="Teardown" line="45">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-27T00:58:19.635828" elapsed="2.168435"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:58:19.635828" elapsed="2.168435"/>
+</test>
+<status status="PASS" start="2024-02-27T00:58:09.104752" elapsed="12.700499"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="WrongZipcode">WrongZipcode</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

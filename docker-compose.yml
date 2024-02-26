@@ -1,0 +1,60 @@
+version: '3'
+services:
+  mysql:
+    container_name: cpshop-mysql
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: prestashop
+    networks:
+      - prestashop_network
+    volumes:
+      - dbdata:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  cpshop:
+    container_name: cpshop
+    image: superpeter/cpshop:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - 8080:80
+    environment:
+      DB_SERVER: cpshop-mysql
+      DB_NAME: prestashop
+      DB_USER: root
+      DB_PASSWD: admin
+      PS_FOLDER_ADMIN: admin4577
+      PS_FOLDER_INSTALL: install4577
+    networks:
+      - prestashop_network
+    volumes:
+      - psdata:/var/www/html
+
+
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: cpshop-phpmyadmin
+      links:
+        - mysql
+      environment:
+        PMA_HOST: mysql
+        PMA_PORT: 3306
+        PMA_ARBITRARY: 1
+      restart: unless-stopped
+      ports:
+        - 8081:80
+      networks:
+        - prestashop_network
+
+networks:
+  prestashop_network:
+volumes:
+  psdata:
+  dbdata:

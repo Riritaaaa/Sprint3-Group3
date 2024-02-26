@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-27T00:54:14.203249" rpa="false" schemaversion="5">
+<suite id="s1" name="CounterService" source="C:\Users\coopt\Desktop\TestRobot\CounterService\CounterService.robot">
+<test id="s1-t1" name="TC01 : Open Catalog" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:14.402378" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/'.</msg>
+<arg>http://localhost:8080/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:54:14.401379" elapsed="2.060281"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-27T00:54:16.462735" level="INFO">This is executed.</msg>
+<arg>This is executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-27T00:54:16.462193" elapsed="0.000643"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:14.401379" elapsed="2.061962"/>
+</test>
+<test id="s1-t2" name="TC02 : Click Product" line="12">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:16.466311" level="INFO">Clicking element '//*[@id="content"]/section/div/div/article/div/div[1]/a'.</msg>
+<arg>//*[@id="content"]/section/div/div/article/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:16.465246" elapsed="0.510485"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:16.976729" level="INFO">Clicking element '//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button'.</msg>
+<arg>//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:16.975731" elapsed="0.063496"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:20.039779" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:17.039227" elapsed="3.000552"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:20.041315" level="INFO">Clicking element '//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a'.</msg>
+<arg>//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:20.041315" elapsed="0.354607"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:20.396427" level="INFO">Clicking element '//*[@id="main"]/div/div[2]/div/div[2]/div/a'.</msg>
+<arg>//*[@id="main"]/div/div[2]/div/div[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:20.396427" elapsed="0.355071"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:20.766038" level="INFO">Current location is 'http://localhost:8080/order'.</msg>
+<arg>http://localhost:8080/order</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:54:20.751498" elapsed="0.014540"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:16.464501" elapsed="4.301537"/>
+</test>
+<test id="s1-t3" name="TC03 : Select Invoice" line="20">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:20.768035" level="INFO">Clicking button '//*[@id="customer-form"]/footer/button'.</msg>
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:20.767039" elapsed="0.829304"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:23.597809" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:21.597349" elapsed="2.000460"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:20.767039" elapsed="2.830770"/>
+</test>
+<test id="s1-t4" name="TC04 : Choose Payment" line="24">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:23.598877" level="INFO">Clicking element '//*[@id="payment-option-4"]'.</msg>
+<arg>//*[@id="payment-option-4"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:23.598877" elapsed="0.053516"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:23.653369" level="INFO">Sending C:\Users\coopt\Desktop\TestRobot\qrcode.jpg to browser.</msg>
+<arg>//*[@id="payment-option-4-additional-information"]/form/input</arg>
+<arg>${ImageFilePath}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:23.653369" elapsed="0.033181"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:25.687974" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:23.687548" elapsed="2.000426"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:25.689366" level="INFO">Clicking button '//*[@id="payment-option-4-additional-information"]/form/button'.</msg>
+<arg>//*[@id="payment-option-4-additional-information"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:25.689366" elapsed="1.891254"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:29.581945" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:27.581628" elapsed="2.000317"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:29.715430" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CounterService.jpg"&gt;&lt;img src="CounterService.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-27T00:54:29.715430" level="INFO">C:\Users\coopt\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py:822: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  return self.get_screenshot_as_file(filename)</msg>
+<arg>CounterService.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-27T00:54:29.581945" elapsed="0.134009"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:23.598877" elapsed="6.117077"/>
+</test>
+<test id="s1-t5" name="Teardown" line="31">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-27T00:54:29.717009" elapsed="2.221935"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:29.716485" elapsed="2.224035"/>
+</test>
+<status status="PASS" start="2024-02-27T00:54:14.205249" elapsed="17.736230"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="CounterService">CounterService</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-27T00:54:43.728149" rpa="false" schemaversion="5">
+<suite id="s1" name="Getinvoice" source="C:\Users\coopt\Desktop\TestRobot\Getinvoice\Getinvoice.robot">
+<test id="s1-t1" name="TC01 : Open Catalog" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:43.923732" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/'.</msg>
+<arg>http://localhost:8080/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:54:43.922728" elapsed="2.110967"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-27T00:54:46.033695" level="INFO">This is executed.</msg>
+<arg>This is executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-27T00:54:46.033695" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:43.921733" elapsed="2.113472"/>
+</test>
+<test id="s1-t2" name="TC02 : Click Product" line="12">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:46.037541" level="INFO">Clicking element '//*[@id="content"]/section/div/div/article/div/div[1]/a'.</msg>
+<arg>//*[@id="content"]/section/div/div/article/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:46.036212" elapsed="0.556479"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:46.593691" level="INFO">Clicking element '//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button'.</msg>
+<arg>//*[@id="add-to-cart-or-refresh"]/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:46.593691" elapsed="0.066627"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:49.662715" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:46.661327" elapsed="3.001388"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:49.663725" level="INFO">Clicking element '//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a'.</msg>
+<arg>//*[@id="blockcart-modal"]/div/div/div[2]/div/div[2]/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:49.662715" elapsed="0.337362"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.000077" level="INFO">Clicking element '//*[@id="main"]/div/div[2]/div/div[2]/div/a'.</msg>
+<arg>//*[@id="main"]/div/div[2]/div/div[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.000077" elapsed="0.344345"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.347426" level="INFO">Current location is 'http://localhost:8080/order'.</msg>
+<arg>http://localhost:8080/order</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.344422" elapsed="0.003004"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:46.035205" elapsed="4.313218"/>
+</test>
+<test id="s1-t3" name="TC03 : Select Invoice" line="20">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.349422" level="INFO">Selecting checkbox '//*[@id="needinvoice"]'.</msg>
+<arg>//*[@id="needinvoice"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.349422" elapsed="0.086715"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.438142" level="INFO">Clicking button '//*[@id="customer-form"]/footer/button'.</msg>
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.438142" elapsed="0.070103"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:50.348423" elapsed="0.159822"/>
+</test>
+<test id="s1-t4" name="TC04 : Input Personal Info" line="24">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.509241" level="INFO">Typing text 'demo' into text field '//*[@id="field-firstname"]'.</msg>
+<arg>//*[@id="field-firstname"]</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.509241" elapsed="0.101130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.610371" level="INFO">Typing text 'demo' into text field '//*[@id="field-lastname"]'.</msg>
+<arg>//*[@id="field-lastname"]</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.610371" elapsed="0.075216"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.685587" level="INFO">Typing text 'demo@gmail.com' into text field '//*[@id="field-email"]'.</msg>
+<arg>//*[@id="field-email"]</arg>
+<arg>demo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.685587" elapsed="0.088481"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.774068" level="INFO">Selecting checkbox '//*[@id="customer-form"]/div/div[4]/div[1]/span/label/input'.</msg>
+<arg>//*[@id="customer-form"]/div/div[4]/div[1]/span/label/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.774068" elapsed="0.064229"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.839296" level="INFO">Selecting checkbox '//*[@id="customer-form"]/div/div[5]/div[1]/span/label/input'.</msg>
+<arg>//*[@id="customer-form"]/div/div[5]/div[1]/span/label/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.839296" elapsed="0.063698"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:50.902994" level="INFO">Clicking button '//*[@id="customer-form"]/footer/button'.</msg>
+<arg>//*[@id="customer-form"]/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:50.902994" elapsed="0.712781"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:50.509241" elapsed="1.107535"/>
+</test>
+<test id="s1-t5" name="TC05 : Write Address" line="32">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:51.617778" level="INFO">Selecting options from selection list 'id_country' by value 204.</msg>
+<arg>id_country</arg>
+<arg>204</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-02-27T00:54:51.617778" elapsed="0.058694"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:52.680439" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:51.678472" elapsed="1.001967"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:52.680439" level="INFO">Typing text 'KKU' into text field '//*[@id="field-company"]'.</msg>
+<arg>//*[@id="field-company"]</arg>
+<arg>KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:52.680439" elapsed="0.073747"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:52.755193" level="INFO">Typing text '1430301342142' into text field '//*[@id="field-vat_number"]'.</msg>
+<arg>//*[@id="field-vat_number"]</arg>
+<arg>1430301342142</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:52.755193" elapsed="0.074209"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:52.830401" level="INFO">Typing text '19 moo 1' into text field '//*[@id="field-address1"]'.</msg>
+<arg>//*[@id="field-address1"]</arg>
+<arg>19 moo 1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:52.830401" elapsed="0.067448"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:52.898831" level="INFO">Typing text '40000' into text field 'postcode'.</msg>
+<arg>postcode</arg>
+<arg>40000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:52.898831" elapsed="0.063007"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:52.962363" level="INFO">Typing text 'khonkaen' into text field '//*[@id="field-city"]'.</msg>
+<arg>//*[@id="field-city"]</arg>
+<arg>khonkaen</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:52.962363" elapsed="0.071761"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:53.034124" level="INFO">Selecting checkbox '//*[@id="use_same_address"]'.</msg>
+<arg>//*[@id="use_same_address"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:53.034124" elapsed="0.025063"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:53.060195" level="INFO">Typing text '0630525780' into text field '//*[@id="field-phone"]'.</msg>
+<arg>//*[@id="field-phone"]</arg>
+<arg>0630525780</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:53.060195" elapsed="0.084265"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:54.145954" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:53.145460" elapsed="1.000494"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:54.146477" level="INFO">Clicking element 'confirm-addresses'.</msg>
+<arg>confirm-addresses</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:54.145954" elapsed="0.578256"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:51.616776" elapsed="3.109011"/>
+</test>
+<test id="s1-t6" name="TC06 : Choose Payment" line="45">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:54.728760" level="INFO">Clicking element '//*[@id="payment-option-1"]'.</msg>
+<arg>//*[@id="payment-option-1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:54.727763" elapsed="0.057114"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:54.785875" level="INFO">Sending C:\Users\coopt\Desktop\TestRobot\qrcode.jpg to browser.</msg>
+<arg>//*[@id="payment-option-1-additional-information"]/form/input</arg>
+<arg>${ImageFilePath}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:54.784877" elapsed="0.033591"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:54:56.820225" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:54.819983" elapsed="2.000242"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:54:56.821231" level="INFO">Clicking button '//*[@id="payment-option-1-additional-information"]/form/button'.</msg>
+<arg>//*[@id="payment-option-1-additional-information"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:54:56.820225" elapsed="1.444732"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-27T00:55:00.266075" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-27T00:54:58.265943" elapsed="2.000132"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:55:00.266075" level="INFO">Clicking link '//*[@id="content-hook_order_confirmation"]/div/div/div/p/a'.</msg>
+<arg>//*[@id="content-hook_order_confirmation"]/div/div/div/p/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T00:55:00.266075" elapsed="0.179667"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-27T00:55:00.584862" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Getinvoice.jpg"&gt;&lt;img src="Getinvoice.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-27T00:55:00.584862" level="INFO">C:\Users\coopt\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py:822: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  return self.get_screenshot_as_file(filename)</msg>
+<arg>Getinvoice.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-27T00:55:00.446748" elapsed="0.138987"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:54:54.727763" elapsed="5.858479"/>
+</test>
+<test id="s1-t7" name="Teardown" line="53">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-27T00:55:00.587291" elapsed="2.218836"/>
+</kw>
+<status status="PASS" start="2024-02-27T00:55:00.586770" elapsed="2.219865"/>
+</test>
+<status status="PASS" start="2024-02-27T00:54:43.729154" elapsed="19.078146"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Getinvoice">Getinvoice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
